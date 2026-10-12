@@ -1,0 +1,1 @@
+ALTER TABLE `stories` ADD `package` text DEFAULT '{}' NOT NULL;

@@ -1,0 +1,2 @@
+import { sqliteTable, text } from 'drizzle-orm/sqlite-core';
+export const stories=sqliteTable('stories',{id:text('id').primaryKey(),owner:text('owner').notNull(),title:text('title').notNull(),content:text('content').notNull(),kind:text('kind').notNull(),category:text('category').notNull(),sources:text('sources').notNull(),package:text('package').notNull().default('{}'),status:text('status').notNull().default('draft'),created:text('created').notNull()});
